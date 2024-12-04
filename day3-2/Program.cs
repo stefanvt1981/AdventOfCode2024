@@ -14,18 +14,6 @@ Console.WriteLine(mulMatches.Count);
 Console.WriteLine(doMatches.Count);
 Console.WriteLine(dontMatches.Count);
 
-/*foreach (Match match in mulMatches)
-{
-    Console.WriteLine($"{match.Value}, index:{match.Index}" );
-    
-    var factoren = Regex.Matches(match.Value, @"\d{1,3}");
-    
-    var factor1 = int.Parse(factoren[0].Value);
-    var factor2 = int.Parse(factoren[1].Value);
-    
-    total += factor1 * factor2;
-}*/
-
 var isDo = true;
 
 for (var i = 0; i < inputText.Length; i++)
